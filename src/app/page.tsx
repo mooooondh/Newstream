@@ -1,7 +1,11 @@
+import { Search } from "@/components/Search";
+
+import styles from "./page.module.css";
+
 export default function Home() {
-	return (
-		<>
-			<h1>Hello Newstream!</h1>
-		</>
-	);
+  return (
+    <main className={styles.wrapper}>
+      <Search />
+    </main>
+  );
 }
