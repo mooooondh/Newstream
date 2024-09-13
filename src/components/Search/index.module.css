@@ -1,0 +1,20 @@
+.searchWrapper {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid cornflowerblue;
+  border-radius: 9999rem;
+}
+
+.searchInput {
+  outline: none;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.searchButton {
+  padding: 0.5rem 1rem;
+  background-color: cornflowerblue;
+  border-radius: 9999rem;
+  color: white;
+}
