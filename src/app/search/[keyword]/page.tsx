@@ -3,6 +3,8 @@ import { News } from "@/components/News";
 
 import { getNewsApi } from "@/api/newsApi";
 
+import styles from "./page.module.css";
+
 export default async function SearchResult({
   params,
 }: {
@@ -19,9 +21,11 @@ export default async function SearchResult({
   }
 
   return (
-    <main>
+    <main className={styles.wrapper}>
       <Search />
-      <h1>{"총 " + newsData.total + "개의 뉴스가 있습니다."}</h1>
+      <div className={styles.searchInfo}>
+        <h1>{"총 " + newsData.total + "개의 뉴스가 있습니다."}</h1>
+      </div>
       <ul>
         {newsData.items.map((news) => (
           <li key={news.originallink}>
