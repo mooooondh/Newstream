@@ -3,15 +3,15 @@ import { INaverNewsDataResult, INewsItem } from "@/utils/interfaces";
 const mockNewsItem: INewsItem[] = [
   {
     title: "title01",
-    originallink: "originallink01",
-    link: "link01",
+    originallink: "https://www.naver.com/",
+    link: "https://www.naver.com/",
     description: "description01",
     pubDate: "Fri, 13 Sep 2024 06:08:00 +0900",
   },
   {
     title: "title02",
-    originallink: "originallink02",
-    link: "link02",
+    originallink: "https://www.google.co.kr/",
+    link: "https://www.google.co.kr/",
     description: "description02",
     pubDate: "Fri, 14 Sep 2024 06:08:00 +0900",
   },

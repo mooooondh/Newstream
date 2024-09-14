@@ -1,10 +1,7 @@
-import dayjs from "dayjs";
-
 import { Search } from "@/components/Search";
+import { News } from "@/components/News";
 
 import { getNewsApi } from "@/api/newsApi";
-
-import { Btag2BoldText, decodeHtmlEntities } from "@/utils/stringTransformers";
 
 export default async function SearchResult({
   params,
@@ -28,9 +25,7 @@ export default async function SearchResult({
       <ul>
         {newsData.items.map((news) => (
           <li key={news.originallink}>
-            <h1>{Btag2BoldText(decodeHtmlEntities(news.title))}</h1>
-            <p>{dayjs(news.pubDate).format("YYYY.MM.DD HH:mm")}</p>
-            <h2>{Btag2BoldText(decodeHtmlEntities(news.description))}</h2>
+            <News newsItem={news} />
           </li>
         ))}
       </ul>

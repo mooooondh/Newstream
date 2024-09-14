@@ -4,18 +4,14 @@
  * 이 둘을 합쳐서 return
  */
 export const Btag2BoldText = (text: string) => {
-  const parseBoldText = (text: string): (JSX.Element | string)[] => {
-    const parts = text.split(/(<b>.*?<\/b>)/gi);
+  const parts = text.split(/(<b>.*?<\/b>)/gi);
 
-    return parts.map((part, index) => {
-      if (part.startsWith("<b>") && part.endsWith("</b>")) {
-        return <b key={index}>{part.substring(3, part.length - 4)} </b>;
-      }
-      return part;
-    });
-  };
-
-  return <p>{parseBoldText(text)}</p>;
+  return parts.map((part, index) => {
+    if (part.startsWith("<b>") && part.endsWith("</b>")) {
+      return <b key={index}>{part.substring(3, part.length - 4)}</b>;
+    }
+    return part;
+  });
 };
 
 /** html엔티티 디코드 */
