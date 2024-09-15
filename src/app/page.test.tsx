@@ -11,4 +11,12 @@ describe("Home 페이지 UI테스트", () => {
     expect(searchInput).toBeInTheDocument();
     expect(searchButton).toBeInTheDocument();
   });
+
+  test("헤더 이미지가 존재한다.", () => {
+    render(<Home />);
+
+    const headerImage = screen.getByAltText("헤더 이미지");
+
+    expect(headerImage).toBeInTheDocument();
+  });
 });
