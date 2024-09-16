@@ -51,6 +51,14 @@ describe("SearchResult 페이지 UI 테스트", () => {
     expect(newsPubDate).toBeInTheDocument();
     expect(newsDescription).toBeInTheDocument();
   });
+
+  test("Pagination 컴포넌트가 존재한다.", async () => {
+    render(await SearchResult({ params: { keyword: inputKeyword } }));
+
+    const pagination = screen.getByTestId("pagination");
+
+    expect(pagination).toBeInTheDocument();
+  });
 });
 
 describe("getNews api 결과에 따른 UI테스트", () => {

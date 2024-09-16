@@ -1,5 +1,6 @@
 import { Search } from "@/components/Search";
 import { News } from "@/components/News";
+import { Pagination } from "@/components/Pagination";
 
 import { getNewsApi } from "@/api/newsApi";
 
@@ -33,6 +34,7 @@ export default async function SearchResult({
           </li>
         ))}
       </ul>
+      <Pagination currentPage={15} totalDataLength={150} />
     </main>
   );
 }
