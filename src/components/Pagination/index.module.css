@@ -1,0 +1,20 @@
+.paginationWrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.2rem;
+	padding: 1rem 0;
+}
+
+.notSelectedButton {
+	padding: 0.5rem 1rem;
+	border: 1px solid cornflowerblue;
+	border-radius: 9999rem;
+}
+
+.selectedButton {
+	padding: 0.5rem 1rem;
+	background: cornflowerblue;
+	border-radius: 9999rem;
+	color: white;
+}

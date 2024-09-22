@@ -2,7 +2,7 @@
 
 import { redirect } from "next/navigation";
 
-export const searchNews = async (keyword: string) => {
-  const encodingKeyword = encodeURI(keyword);
-  redirect(`/search/${encodingKeyword}`);
+export const searchNews = async (keyword: string, page: string) => {
+	const encodingKeyword = encodeURI(keyword);
+	redirect(`/search/${encodingKeyword}?start=${page}`);
 };
