@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Newstream - 뉴스 검색 서비스
 
-## Getting Started
+## 기능
 
-First, run the development server:
+Newstream은 검색어를 입력하면 검색어가 포함된 뉴스들을 제공합니다.
+사용자들은 원하는 주제의 뉴스들을 검색어 입력을 통해 찾아볼 수 있습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 목적
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- TDD(Test Driven Development)방법론을 이용해 프로젝트를 진행해보며, TDD방법론의 장단점을 직접 느껴보기.
+- TDD를 느껴보기 위한 프로젝트이므로 유려한 디자인, 최신 기능 적용과 같은 TDD와 관계 없다 판단되는 부분은 배제하고 최소한의 기능 개발만을 목표로 함.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 개발 순서
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. 기능을 정의한다.
+2. 기능을 테스트하는 테스트 코드를 작성한다.
+3. 테스트를 진행한다. (테스트 실패)
+4. 테스트를 통과할 수 있는 최소한의 기능만 구현한다.
+5. 테스트를 진행한다. (테스트 성공, 실패시 4로)
+6. 코드를 정리하고, 스타일을 적용한다.
+7. 1로 돌아간다.
 
-## Learn More
+## 후기
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+후기 및 자세한 내용은 [여기](https://w-storage.tistory.com/62)에서 확인할 수 있습니다.
